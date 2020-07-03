@@ -11,6 +11,6 @@ RANDOM_NAMES = [
     "Gaunter O'Dimm",
     "Keira Metz",
     "Emhyr var Emreis",
-    "The Angry Shiba Inu"
+    "The Angry Shiba Inu",
 ]
 DEFAULT_TURN_TIME_SECONDS = 1

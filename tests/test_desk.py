@@ -49,4 +49,4 @@ def test_deck_add_another_deck(deck, cards):
     expected = list(deck) + list(second_deck)
     deck.fetch_all(second_deck)
     assert second_deck.size == 7
-    assert sorted(list(second_deck)) == sorted(expected)
+    assert not sum([not card in expected for card in second_deck])

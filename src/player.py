@@ -1,7 +1,6 @@
 from random import uniform
 from time import time
 
-from common.utils import colored
 from src.cards import Card
 from src.deck import Deck
 
@@ -55,17 +54,14 @@ class Player:
             input("Hurry! Press ENTER to say 'SNAP!'")
             time_after_say = time()
             latency = round(time_after_say - time_before_say, 2)
-        print(
-            f"{self.name} said {colored('SNAP!', 'YELLOW')} in {latency} seconds"
-        )
+        print(f"{self.name} said 'SNAP!' in {latency} seconds")
         return latency
 
     def turn(self) -> Card:
         """Simulate player's turn. Take a card from player's hand, print message and return card"""
         taken_card = self.hand.get_card()
         print(
-            f"Player {colored(self.name, 'BLUE')} "
-            f"turned out {colored(str(taken_card), 'LIGHTBLUE_EX')}, hand size:",
+            f"Player {self.name} " f"turned out {taken_card}, hand size:",
             self.hand.size,
         )
         return taken_card

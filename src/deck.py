@@ -17,7 +17,7 @@ class Deck:
         fetch_all: method for fetching all cards of this deck to another one
     """
 
-    def __init__(self, cards: List[Card]):
+    def __init__(self, cards: List[Card] = []):
         self.deck = deque(list(cards))
 
     def __repr__(self):
