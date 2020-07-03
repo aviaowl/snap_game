@@ -1,11 +1,11 @@
 # Snap game
-Subscription manager is a tool that allows everyone to keep, track and analyze service subscriptions like Amazon Prime, Spotify, Coursera, etc in one place.
+Snap! is a card game where all of the cards are shuffled and dealt equally to players (a group of 2, 3 or 4 people). This realization of the game supports two modes:
+auto_mode=True  means that every player in the game is bot and game is completely simulated.
+no auto_mode means that the main player is human, and he need to press 'Enter' to say 'SNAP' during the game
 
-Tool has Telegram and command-line interfaces.
+Game has command-line interface.
 
 ## How to play Snap
-Snap! is a card game where all of the cards are shuffled and dealt equally to players (a group of 2, 3 or 4 people).
-
 * Each player in turn turns over the top card from their face down dealt pile and puts it on top of their face up pile.
 
 * When someone turns over a card that matches the value (same number, or same face) of a card on top of another player's face up pile, the players race to be the first to say “Snap!”
